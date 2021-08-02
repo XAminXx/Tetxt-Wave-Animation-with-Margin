@@ -1,0 +1,90 @@
+/*Custom CSS*/
+body{
+    background-image: url(https://images.unsplash.com/photo-1504672281656-e4981d70414b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+}
+
+body>section.TextAnimation{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body>section.TextAnimation>span{
+    color: white;
+    font-size: 52px;
+    text-transform: uppercase;
+    animation: animate 2s infinite;
+}
+/*End of Custom CSS*/
+
+/*Set delay for each letter of our word*/
+body>section.TextAnimation>span:nth-child(1){
+    animation-delay: 0.1s;
+}
+
+body>section.TextAnimation>span:nth-child(2){
+    animation-delay: 0.2s;
+}
+
+body>section.TextAnimation>span:nth-child(3){
+    animation-delay: 0.3s;
+}
+
+body>section.TextAnimation>span:nth-child(4){
+    animation-delay: 0.4s;
+}
+
+body>section.TextAnimation>span:nth-child(5){
+    animation-delay: 0.5s;
+}
+
+body>section.TextAnimation>span:nth-child(6){
+    animation-delay: 0.6s;
+}
+
+body>section.TextAnimation>span:nth-child(7){
+    animation-delay: 0.7s;
+}
+/* End of Set delay for each letter of our word*/
+
+/*Keyframe Set for our animation wave*/
+@keyframes animate{
+
+    0%{
+        color: rgba(255, 255, 255, 0.2);
+        margin-left: 0px;
+    }
+
+    25%{
+        color: yellow;
+        text-shadow: 0px 15px 5px black;
+        margin-left: 10px;
+    }
+
+    100%{
+        color: rgba(255, 255, 255, 0.2);
+        margin-left: 0px;
+    }
+}
+/*End of Keyframe Set for our animation wave*/
+
+/*Contact Me Section*/
+body>section.contactme{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body>section.contactme>p{
+    color: white;
+    font-size: 24px;
+}
+
+body>section.contactme>p>a{
+    color: yellow;
+    font-size: 24px;
+    text-decoration: none;
+}
+/*End of Contact Me Section*/
